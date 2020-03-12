@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Par o non</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<label for="quantity">Número: </label>
+	<input type="number" id="quantity" name="quantity" min="1">
+
+	<p><button onclick="ope()">¿Par o non?</button></p>
+
+	<textarea id="txta" rows="1" cols="5"></textarea>
+
+	<script>
+		function ope(){
+			var n = document.getElementById('quantity').value;
+
+			console.log("Hola");
+			
+		if(n%2==0){
+				console.log("Par");
+				document.getElementById('txta').value="Par";
+			}else{
+				console.log("Non");
+				document.getElementById('txta').value="Non";
+			}
+		}
+	</script>
+</body>
+</html>
